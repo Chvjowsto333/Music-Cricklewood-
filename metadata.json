@@ -1,0 +1,5 @@
+{
+  "name": "Audio Player",
+  "description": "A modern web application featuring an MP3 audio player.",
+  "requestFramePermissions": []
+}
