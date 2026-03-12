@@ -3,7 +3,7 @@ import { writeFile, mkdir, readdir, unlink } from 'fs/promises'
 import { join } from 'path'
 import { existsSync } from 'fs'
 
-const songsDirectory = join(process.cwd(), 'Audio')
+const songsDirectory = join(process.cwd(), 'public/Audio')
 
 export async function GET() {
   try {
@@ -31,7 +31,7 @@ export async function GET() {
           id: file,
           title,
           artist,
-          url: `/api/songs/play?id=${encodeURIComponent(file)}`,
+          url: `/Audio/${encodeURIComponent(file)}`,
         }
       })
 
@@ -76,7 +76,7 @@ export async function POST(request: Request) {
         id: filename,
         title,
         artist,
-        url: `/api/songs/play?id=${encodeURIComponent(filename)}`,
+        url: `/Audio/${encodeURIComponent(filename)}`,
       })
     }
 
