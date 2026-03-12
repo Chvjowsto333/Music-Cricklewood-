@@ -8,6 +8,10 @@ This contains everything you need to run your app locally.
 
 View your app in AI Studio: https://ai.studio/apps/f7bd1ac2-8f87-4639-a81b-5c1ea37e32e1
 
+## What's New
+
+- Added new songs.
+
 ## Run Locally
 
 **Prerequisites:**  Node.js
