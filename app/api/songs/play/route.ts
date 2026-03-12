@@ -14,7 +14,7 @@ export async function GET(request: Request) {
 
     // Sanitize filename to prevent directory traversal
     const filename = id.replace(/[^a-zA-Z0-9.\-_ ()]/g, '')
-    const filePath = join(process.cwd(), 'Audio', filename)
+    const filePath = join(process.cwd(), 'public/Audio', filename)
 
     if (!existsSync(filePath)) {
       return new NextResponse('Song not found', { status: 404 })
